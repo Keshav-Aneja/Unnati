@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "vogue";
+  src: url("../../public/fonts/Vogue.ttf");
+}
+@font-face {
+  font-family: "couture";
+  src: url("../../public/fonts/couture-bld.otf");
+}
+@font-face {
+  font-family: "anderson-black";
+  src: url("../../public/fonts/AndersonGrotesk-Black.otf");
+}
+@font-face {
+  font-family: "anderson";
+  src: url("../../public/fonts/AndersonGrotesk.otf");
+}
