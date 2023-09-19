@@ -3,21 +3,24 @@ background-color: black;
 }
 .button-primary{
     border-image-slice: 1;
-    background-image: -webkit-linear-gradient(180deg, #f4af55,#ff7c00);
+    background: linear-gradient(180deg, #f4af55,#ff7c00);
     border: 1px;
-    width: 7%;
+    width: 8%;
     display: flex;
     justify-content: center;
     text-align: center;
     border-radius: 2em;
-    padding: 0.24em;
+    padding: 0.28em 0.3em;
     font-weight: bold;
     font-family: "couture";
     letter-spacing: 0.125rem;
     border: 0.1em solid #bd7313;
-    
+    transition: all 0.6s ease-in-out;
 
 }
 .button-primary:hover{
-    border: none;
+    border: 0.1em solid transparent;
+    background: linear-gradient(to left, #f4af55,#ff7c00);
+
+
 }
