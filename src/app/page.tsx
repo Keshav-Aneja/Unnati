@@ -1,3 +1,8 @@
+import Landing from "@/app/landing/page";
 export default function page() {
-  return <main className="">Hello</main>;
+  return (
+    <main className="">
+      <Landing></Landing>
+    </main>
+  );
 }
