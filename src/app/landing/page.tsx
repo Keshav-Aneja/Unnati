@@ -34,8 +34,8 @@ export default function page() {
             <br /> sTART Your career on Unnati by signing in today
             <span className="font-anderson text-2xl">!</span>
           </h1>
+          <ButtonPrimary></ButtonPrimary>
         </div>
-        <ButtonPrimary></ButtonPrimary>
       </div>
     </div>
   );
