@@ -6,13 +6,13 @@ import Maps from "@/sections/Maps";
 import Nav from "@/components/Nav";
 export default function page() {
   return (
-    <main className="w-full flex flex-col bg-[#181818]">
+    <main className="w-full flex flex-col bg-[#181818] overflow-x-hidden">
       <Nav></Nav>
       <Landing></Landing>
-      <div className="cont1 w-full h-[100vh]">
+      <div className="cont1 w-full h-[170vh]">
         <Ask></Ask>
       </div>
-      <div className="cont2 w-full h-[100vh]">
+      <div className="cont2 w-full min-h-[100vh]">
         <Maps></Maps>
       </div>
       <Footer></Footer>

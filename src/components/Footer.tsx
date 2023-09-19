@@ -9,7 +9,7 @@ export default function Footer() {
         width={300}
         height={300}
       ></Image>
-      <h4>2023</h4>
+      <h4 className="font-vogue font-bold">2023</h4>
     </div>
   );
 }

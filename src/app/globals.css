@@ -25,3 +25,11 @@
 .navbar {
   z-index: 100;
 }
+.questionaire {
+  height: 70vh;
+  background-color: #4f4f4f;
+  background-image: url("../../public/images/ABC-2.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  border: 2px solid #bd7313;
+}

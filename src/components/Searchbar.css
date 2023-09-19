@@ -9,9 +9,16 @@
   font-family: "couture";
   margin-top: 30px;
 }
+#ipt:focus .searchbar {
+  box-shadow: 0px 0px 20px #bd7313;
+}
 .searchicon {
   position: absolute;
   top: 50%;
   left: 95%;
   transform: translate(-50%, -50%);
+}
+.glowing {
+  box-shadow: 0 0 30px #bd7313; /* Adjust the shadow color and size as needed */
+  transition: box-shadow 0.3s ease-in-out;
 }

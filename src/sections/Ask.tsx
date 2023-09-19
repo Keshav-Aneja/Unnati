@@ -1,5 +1,8 @@
+"use client";
 import Searchbar from "@/components/Searchbar";
 import Image from "next/image";
+import Questionairre from "./Questionairre";
+
 export default function Ask() {
   return (
     <div className="w-[100vw] min-h-[150vh] bg-[#181818] text-white justify-center items-center relative flex flex-col">
