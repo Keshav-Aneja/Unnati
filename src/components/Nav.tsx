@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Nav() {
   return (
-    <div className="navbar">
+    <div className="navbar" style={{ zIndex: 100 }}>
       <div className="upper-nav w-full bg-[#181818] fixed top-0 left-0 h-fit flex justify-center items-center py-2 text-white md:hidden">
         <Image
           src="/images/unnati-logo.png"

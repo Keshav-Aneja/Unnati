@@ -1,0 +1,15 @@
+.button-secondary {
+  color: #ff7c00;
+  border: 0.1em solid #bd7313;
+  text-align: center;
+  border-radius: 2em;
+  display: inline-block;
+  letter-spacing: 0.125rem;
+  background-color: #242323;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background-image: linear-gradient(180deg, #f4af55, #ff7c00);
+  color: #242323;
+}

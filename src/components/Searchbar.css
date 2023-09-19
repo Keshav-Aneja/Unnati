@@ -1,19 +1,17 @@
-.searchbar{
-    position:relative;
-    display:flex;
-    border-radius:0.7em; 
-    border: 3px solid #bd7313;
-    width:30em;
-    height:2em;
-    padding:0em 2em ;
-    color:#878787;
-    background-color:transparent;
-    font-family: "couture";
-    
+.searchbar {
+  position: relative;
+  display: flex;
+  border: 3px solid #bd7313;
+  width: 50%;
+  height: 2em;
+  color: #878787;
+  background-color: transparent;
+  font-family: "couture";
+  margin-top: 30px;
 }
-.searchicon{
-    position:absolute;
-    top:50%;
-    left:95%;
-    transform: translate(-50%, -50%);
+.searchicon {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
 }
