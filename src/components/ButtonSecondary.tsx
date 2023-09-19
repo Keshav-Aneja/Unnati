@@ -1,4 +1,4 @@
 import "./ButtonSecondary.css";
 export default function ButtonSecondary() {
-  return <></>;
+  return <div className="button-secondary">SIGN UP</div>;
 }
