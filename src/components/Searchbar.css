@@ -1,0 +1,19 @@
+.searchbar{
+    position:relative;
+    display:flex;
+    border-radius:0.7em; 
+    border: 3px solid #bd7313;
+    width:30em;
+    height:2em;
+    padding:0em 2em ;
+    color:#878787;
+    background-color:transparent;
+    font-family: "couture";
+    
+}
+.searchicon{
+    position:absolute;
+    top:50%;
+    left:95%;
+    transform: translate(-50%, -50%);
+}
