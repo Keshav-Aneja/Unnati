@@ -18,3 +18,7 @@
   font-family: "anderson";
   src: url("../../public/fonts/AndersonGrotesk.otf");
 }
+@font-face {
+  font-family: "coutureItalic";
+  src: url("../../public/fonts/couture-bldit.otf");
+}

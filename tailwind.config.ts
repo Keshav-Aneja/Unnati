@@ -18,6 +18,7 @@ const config: Config = {
         couture: ["couture"],
         anderson: ["anderson"],
         andersonBlack: ["anderson-black"],
+        coutureItalic: ["couture-i"],
       },
     },
   },
