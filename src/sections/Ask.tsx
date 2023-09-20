@@ -26,7 +26,7 @@ export default function Ask() {
       <div className="sub-heading text-white font-couture mt-6 tracking-widest">
         We rise by lifting others
       </div>
-      <Searchbar hideIt={false} place={"Ask Your Question Here"}></Searchbar>
+      <Searchbar hideIt={false} place={"Ask Your Question Here..."}></Searchbar>
     </div>
   );
 }

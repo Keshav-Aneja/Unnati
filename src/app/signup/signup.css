@@ -93,9 +93,13 @@ h1 {
     padding: 0.8em;
   }
 }
-input {
+.form input {
   background: #181818;
   border: 2px solid #bd7313;
   color: #bd7313;
   font-weight: 600;
+}
+.glowing2 {
+  box-shadow: 0 0 10px #bd7313; /* Adjust the shadow color and size as needed */
+  transition: box-shadow 0.3s ease-in-out;
 }

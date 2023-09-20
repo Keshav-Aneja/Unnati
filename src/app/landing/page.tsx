@@ -24,12 +24,12 @@ export default function page() {
           ></Image>
         </div>
         <div className="heading-container w-full relative top-[16rem] md:top-[13rem]">
-          <h1 className="text-white font-vogue text-3xl md:text-6xl tracking-widest font-medium leading-tight">
+          <h1 className="text-white font-vogue text-3xl md:text-6xl tracking-widest font-medium leading-tight text-left">
             There is no force equal <br /> to a
             <span className="text-[#cc781e] italic"> woman</span> <br />
             determined to rise
           </h1>
-          <h1 className="sub-heading text-[#c4c4c4] font-couture font-thin tracking-widest text-xs md:text-base">
+          <h1 className="sub-heading text-[#c4c4c4] font-couture font-thin tracking-widest text-xs md:text-base text-left">
             Who said being a homemaker can stop you from earning
             <span className="font-anderson text-2xl">?</span>
             <br /> sTART Your career on Unnati by signing in today
@@ -37,7 +37,7 @@ export default function page() {
           </h1>
           <div className="flex gap-4 mt-6">
             <ButtonPrimary>LOG In</ButtonPrimary>
-            <ButtonSecondary>SIGN UP</ButtonSecondary>
+            <ButtonSecondary link={"signup"}>SIGN UP</ButtonSecondary>
           </div>
         </div>
       </div>

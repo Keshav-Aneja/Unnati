@@ -1,9 +1,9 @@
 "use client";
 import ButtonSecondary from "@/components/ButtonSecondary";
-import "./signup.css";
 import { useState } from "react";
 import Image from "next/image";
 import Nav from "@/components/Nav";
+import "./signup.css";
 export default function SignUp() {
   const [isFocused, setIsFocused] = useState(false);
 
@@ -43,22 +43,54 @@ export default function SignUp() {
             required
             onFocus={handleInputFocus}
             onBlur={handleInputBlur}
-            className={` inputs ${isFocused ? "glowing" : ""}`}
+            className={` inputs ${isFocused ? "glowing2" : ""}`}
           />
-          <input type="email" className="inputs" placeholder="Email Address" />
+          <input
+            type="email"
+            onFocus={handleInputFocus}
+            onBlur={handleInputBlur}
+            className={` inputs ${isFocused ? "glowing2" : ""}`}
+            placeholder="Email Address"
+          />
           <input
             type="number"
-            className="inputs"
+            onFocus={handleInputFocus}
+            onBlur={handleInputBlur}
+            className={` inputs ${isFocused ? "glowing2" : ""}`}
             placeholder="Contact Number"
           />
-          <div className="location">
-            <input type="text" className="inputs1" placeholder="Select State" />
-            <input type="text" className="inputs1" placeholder="Select City" />
+          <div className="location flex gap-4">
+            <input
+              type="text"
+              onFocus={handleInputFocus}
+              onBlur={handleInputBlur}
+              className={` inputs ${isFocused ? "glowing2" : ""}`}
+              placeholder="Select State"
+            />
+            <input
+              type="text"
+              onFocus={handleInputFocus}
+              onBlur={handleInputBlur}
+              className={` inputs ${isFocused ? "glowing2" : ""}`}
+              placeholder="Select City"
+            />
           </div>
-          <input type="text" className="inputs" placeholder="Your Profession" />
-          <input type="password" className="inputs" placeholder="Password" />
+          <input
+            type="text"
+            onFocus={handleInputFocus}
+            onBlur={handleInputBlur}
+            className={` inputs ${isFocused ? "glowing2" : ""}`}
+            placeholder="Your Profession"
+          />
+          <input
+            type="password"
+            onFocus={handleInputFocus}
+            onBlur={handleInputBlur}
+            className={` inputs ${isFocused ? "glowing2" : ""}`}
+            placeholder="Password"
+          />
           <div className="signup w-full flex justify-center">
-            <ButtonSecondary>REGISTER</ButtonSecondary>
+            <ButtonSecondary link={"dashboard"}>REGISTER</ButtonSecondary>
           </div>
         </div>
       </div>

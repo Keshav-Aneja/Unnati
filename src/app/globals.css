@@ -27,16 +27,37 @@
 }
 .questionaire {
   height: 70vh;
-  background-color: #4f4f4f;
-  background-image: url("../../public/images/ABC-2.png");
-  background-blend-mode: overlay;
+  /* background-color: #4f4f4f; */
+  /* background-image: url("../../public/images/ABC-2.png"); */
+  /* background-blend-mode: overlay; */
+  background: transparent;
   background-size: cover;
   border: 2px solid #bd7313;
 }
 .main-heading {
   text-shadow: 0px 0px 20px black;
 }
-.glowing {
-  box-shadow: 0 0 30px #bd7313; /* Adjust the shadow color and size as needed */
-  transition: box-shadow 0.3s ease-in-out;
+.product-list {
+  background-image: url("../../public/images/bg-22.png");
+  background-position-y: -3rem;
+  background-position-x: 3rem;
 }
+* {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Webkit (Chrome, Safari, Edge) */
+/* Note that these are non-standard properties and may not work in all browsers */
+*::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Optional: Add some padding or margin to the element where you want to hide the scrollbar */

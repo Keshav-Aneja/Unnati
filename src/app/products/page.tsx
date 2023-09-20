@@ -2,6 +2,41 @@
 import Image from "next/image";
 import Nav from "@/components/Nav";
 import Searchbar from "@/components/Searchbar";
+import ProductList from "@/components/ProductList";
+const productList = [
+  {
+    productId: 1,
+    title: "Embroidery Art",
+    description:
+      "I provide a exceptional embroidery service that beautifully combines craftsmanship and creativity. Clients can expect top-notch quality, attention to their specific design preferences, and the warmth of supporting a talented local artisan in the world of textile artistry.",
+    priceStart: 200,
+    img: "post-1.avif",
+  },
+  {
+    productId: 2,
+    title: "Wall Hangings",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore magnam, omnis corporis veniam, consequuntur, id ipsa accusamus saepe voluptatem accusantium in. Fugit laboriosam voluptas ex atque dignissimos amet magni dolore!",
+    priceStart: 700,
+    img: "post-2.webp",
+  },
+  {
+    productId: 3,
+    title: "Embroidery Art",
+    description:
+      "I provide a exceptional embroidery service that beautifully combines craftsmanship and creativity. Clients can expect top-notch quality, attention to their specific design preferences, and the warmth of supporting a talented local artisan in the world of textile artistry.",
+    priceStart: 200,
+    img: "post-1.avif",
+  },
+  {
+    productId: 4,
+    title: "Wall Hangings",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore magnam, omnis corporis veniam, consequuntur, id ipsa accusamus saepe voluptatem accusantium in. Fugit laboriosam voluptas ex atque dignissimos amet magni dolore!",
+    priceStart: 700,
+    img: "post-2.webp",
+  },
+];
 export default function page() {
   return (
     <div className="bg-[#181818] w-full min-h-[150vh] h-fit flex justify-center">
@@ -30,7 +65,18 @@ export default function page() {
           </h1>
           <Searchbar hideIt={true} place={"Search for Products..."}></Searchbar>
           <div className="block w-full h-12"></div>
-          <div className="product-container w-full min-h-[70vh] bg-transparent rounded-3xl border-2 border-[#bd7313]"></div>
+          <div className="product-container w-full h-[70vh] bg-transparent rounded-3xl border-2 border-[#bd7313] overflow-hidden p-2 flex justify-between items-start gap-2 flex-wrap overflow-y-scroll">
+            {productList.map((data, i) => (
+              <ProductList
+                key={i}
+                productId={data.productId}
+                title={data.title}
+                description={data.description}
+                priceStart={data.priceStart}
+                img={data.img}
+              ></ProductList>
+            ))}
+          </div>
         </div>
       </div>
     </div>
