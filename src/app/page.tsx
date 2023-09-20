@@ -1,3 +1,4 @@
+"use client";
 import Landing from "@/app/landing/page";
 import FormPrimary from "@/components/form-primary";
 import Ask from "@/sections/Ask";

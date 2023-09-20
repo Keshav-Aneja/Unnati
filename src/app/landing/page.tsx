@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import Nav from "@/components/Nav";
 import ButtonPrimary from "@/components/ButtonPrimary";
 import ButtonSecondary from "@/components/ButtonSecondary";
 import Ask from "@/sections/Ask";
+import Buttons from "@/sections/Buttons";
 export default function page() {
   return (
     <div className="landing w-full min-h-[100vh] bg-[#181818] flex justify-center">
@@ -35,10 +38,11 @@ export default function page() {
             <br /> sTART Your career on Unnati by signing in today
             <span className="font-anderson text-2xl">!</span>
           </h1>
-          <div className="flex gap-4 mt-6">
+          {/* <div className="flex gap-4 mt-6">
             <ButtonPrimary>LOG In</ButtonPrimary>
             <ButtonSecondary link={"signup"}>SIGN UP</ButtonSecondary>
-          </div>
+          </div> */}
+          <Buttons></Buttons>
         </div>
       </div>
     </div>
