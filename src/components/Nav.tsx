@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-export default function Nav() {
+import SmoothScroll from "@/app/helpers/smoothScroll";
+interface navProps {
+  deVal: Number;
+}
+const Nav: React.FC<navProps> = ({ deVal }) => {
   return (
     <div className="navbar" style={{ zIndex: 100 }}>
       <div className="upper-nav w-full bg-[#181818] fixed top-0 left-0 h-fit flex justify-center items-center py-2 text-white md:hidden">
@@ -60,35 +64,57 @@ export default function Nav() {
           ></Image>
         </div>
         <div className="menu-list md:w-[80%] lg:w-[50%] md:flex justify-around tracking-wider md:text-xs lg:text-base hidden">
-          <Link href="" className=" text-[#bd7313] duration-300 ease">
-            <p className="item font-couture">Home</p>
+          <Link
+            href="/"
+            className={` ${
+              deVal === 1 ? "text-[#bd7313]" : "text-white"
+            } duration-300 ease`}
+          >
+            <p className="item font-couture  hover:text-[#bd7313] duration-300 ease">
+              Home
+            </p>
           </Link>
           <Link
-            href=""
-            className=" text-white  hover:text-[#bd7313] duration-300 ease"
+            href="/products"
+            className={` ${
+              deVal === 2 ? "text-[#bd7313]" : "text-white"
+            } duration-300 ease`}
           >
-            <p className="item font-couture">Products</p>
+            <p className="item font-couture   hover:text-[#bd7313] duration-300 ease">
+              Products
+            </p>
           </Link>
           <Link
-            href=""
-            className=" text-white  hover:text-[#bd7313] duration-300 ease"
+            href="/services"
+            className={` ${
+              deVal === 3 ? "text-[#bd7313] " : "text-white"
+            } duration-300 ease`}
           >
-            <p className="item font-couture">Services</p>
+            <p className="item font-couture  hover:text-[#bd7313] duration-300 ease">
+              Services
+            </p>
           </Link>
+          <SmoothScroll
+            target="#ask"
+            className={` ${
+              deVal === 4 ? "text-[#bd7313]" : "text-white"
+            } duration-300 ease`}
+          >
+            <p className="item font-couture   hover:text-[#bd7313] duration-300 ease">
+              Ask Desk
+            </p>
+          </SmoothScroll>
           <Link
             href=""
-            className=" text-white  hover:text-[#bd7313] duration-300 ease"
+            className={` ${deVal === 5 ? "text-[#bd7313]" : "text-white"} `}
           >
-            <p className="item font-couture">Ask Desk</p>
-          </Link>
-          <Link
-            href=""
-            className=" text-white  hover:text-[#bd7313] duration-300 ease"
-          >
-            <p className="item font-couture">Women in news</p>
+            <p className="item font-couture   hover:text-[#bd7313] duration-300 ease">
+              Women in news
+            </p>
           </Link>
         </div>
       </div>
     </div>
   );
-}
+};
+export default Nav;

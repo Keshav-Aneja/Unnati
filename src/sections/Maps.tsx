@@ -4,7 +4,7 @@ import Map from "@/components/Map";
 export default function Maps() {
   return (
     <div className="map-container w-full flex flex-col justify-center items-center relative">
-      <div className="text-white font-vogue text-6xl tracking-widest font-medium leading-tight">
+      <div className="text-white font-vogue md:text-6xl tracking-widest font-medium leading-tight">
         Vendors in Your Locality
       </div>
       <h1

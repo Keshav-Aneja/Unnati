@@ -2,7 +2,11 @@ import "./Searchbar.css";
 import { useState } from "react";
 import Image from "next/image";
 import Questionairre from "@/sections/Questionairre";
-export default function Searchbar() {
+interface searchProps {
+  hideIt: Boolean;
+  place: string;
+}
+const Searchbar: React.FC<searchProps> = ({ hideIt, place }) => {
   const [isFocused, setIsFocused] = useState(false);
 
   const handleInputFocus = () => {
@@ -26,6 +30,7 @@ export default function Searchbar() {
           className="w-[90%] bg-[#181818] outline-none rounded-full px-2"
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
+          placeholder={place}
         />
         <Image
           className="searchicon cursor-pointer"
@@ -35,8 +40,13 @@ export default function Searchbar() {
           height={20}
         />
       </div>
-      <div className="block w-full h-20"></div>
-      <Questionairre></Questionairre>
+      <div className={`block w-full h-20 ${hideIt ? "hidden" : "block"}`}></div>
+      <div
+        className={`${hideIt ? "hidden" : "block"} w-full flex justify-center`}
+      >
+        <Questionairre></Questionairre>
+      </div>
     </>
   );
-}
+};
+export default Searchbar;
